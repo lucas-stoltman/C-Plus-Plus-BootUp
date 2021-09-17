@@ -25,24 +25,23 @@ int main() {
 
 #include <iostream>
 #include "book.h"
+using namespace std;
 
 int main() {
 
-    Book book1,book2, book3;
+    Book book1, book2, book3;
 
-    std::cout << "Greetinge, welcome to the library of congress." << std::endl;
+    cout << "Greetinge, welcome to the library of congress." << endl;
 
-    book1.set_title_ = "Dune";
-    book1.set_author_ = "Herbert";
-    book1.length_ = 451;
-    book1.bookmark_ = 1;
+    book1.set_title("Dune");
+    book1.set_author("Herbert");
+    book1.set_length(451);
+    book1.set_bookmark(1);
 
     book2 = book1;
-    book2.author_ = "Jimmy Jazz";
+    book2.set_author("Jimmy Jazz");
 
 
-cout << book1.author() << endl;
-cout << book2.author() << endl;
+cout << "Book1: " << book1.title() << " by " << book1.author() << "." << endl;
+cout << "book2: " << book2.title() << " by " << book2.author() << "." << endl;
 }
-
-
