@@ -7,13 +7,13 @@ class Book
 {
 public:
 //accessors
-    string author() const;
     string title() const;
+    string author() const;
     int length() const;
     int bookmark() const;
 
-    bool set_author(string author);
     bool set_title(string title);
+    bool set_author(string author);
     bool set_length(int length);
     bool set_bookmark(int bookmark);
 
