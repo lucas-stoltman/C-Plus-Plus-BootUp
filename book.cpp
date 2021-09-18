@@ -1,7 +1,7 @@
-// Classes and methods implemented here
+// Classes and methods actually implemented here
 #include "book.h"
 
-// getters
+// GETTERS
 string Book::title() const
 {
     return title_;
@@ -22,8 +22,7 @@ int Book::bookmark() const
     return bookmark_;
 }
 
-
-// setters
+// SETTERS
 bool Book::set_title(string title)
 {
     title_ = title;
@@ -61,3 +60,47 @@ bool Book::set_bookmark(int bookmark)
     return true;
     }
 }
+
+// CONSTRUCTORS
+// super basic constructor
+Book::Book()
+{
+    title_ = "";
+    author_ = "";
+    length_ = 0;
+    bookmark_ = 1;
+}
+
+// intermediate constructor
+Book::Book(string title, string author)
+{
+    title_ = title;
+    author_ = author;
+    length_ = 0;
+    bookmark_ = 1;
+}
+
+// complete constructor
+Book::Book(string title, string author, int length, int bookmark)
+{
+    title_ = title;
+    author_ = author;
+    length_ = length;
+    bookmark_ = bookmark;
+}
+
+
+// int Book::turn_page(int num_pages)
+// {
+//     set_bookmark(bookmark_ + num_pages);
+//     return bookmark_;
+// }
+
+// void Book::print_details(ostream& stream) const
+// {
+//     stream << "Title: " << title_ << endl;
+//     stream << "Author: " << author_ << endl;
+//     stream << "Length: " << length_ << endl;
+//     stream << "Current Location: " << bookmark_ << endl << endl;
+
+// }

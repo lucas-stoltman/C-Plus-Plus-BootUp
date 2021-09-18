@@ -1,5 +1,14 @@
 // Created by Lucas Stoltman 2021
 
+/*
+
+Remember! When compiling, you need to do the g++ command to all .cpp files!
+So a good command to compile would be:
+
+$ g++ *.cpp -o run
+
+*/
+
 // HELLO WORLD EXAMPLE
 /*
 #include <iostream>
@@ -41,7 +50,7 @@ int main() {
     book2 = book1;
     book2.set_author("Jimmy Jazz");
 
-
-cout << "Book1: " << book1.title() << " by " << book1.author() << "." << endl;
-cout << "book2: " << book2.title() << " by " << book2.author() << "." << endl;
+    // book1.print_details(cout)
+    // book2.print_details(cout)
+    return 0;
 }
