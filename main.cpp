@@ -34,6 +34,7 @@ int main() {
 
 #include <iostream>
 #include "book.h"
+#include "bookshelf.h"
 using namespace std;
 
 int main() {
