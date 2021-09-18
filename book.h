@@ -1,5 +1,4 @@
-// Specifics about the object included and what they can do with it
-// like a "handbook" of the object
+// Header file. Specifics about the object included and what they can do with it
 
 #include <string>
 using namespace std;
