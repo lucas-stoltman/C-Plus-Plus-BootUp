@@ -51,6 +51,8 @@ int main() {
     book2 = book1;
     book2.set_author("Jimmy Jazz");
 
+    cout << "test" << endl;
+    
     // book1.print_details(cout)
     // book2.print_details(cout)
     return 0;
