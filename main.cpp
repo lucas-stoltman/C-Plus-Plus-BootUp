@@ -44,9 +44,7 @@ int main() {
     cout << "Greetings, welcome to the library of congress." << endl;
 
     Book book1("Dune", "Herbert", 451, 1);
-
-    book2 = book1;
-    book2.set_author("Jimmy Jazz");
+    book1.TurnPage(1);
     
     book1.PrintDetails(cout);
 
