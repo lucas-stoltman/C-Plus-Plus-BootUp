@@ -93,13 +93,13 @@ Book::Book(string title, string author, int length, int bookmark)
 }
 
 
-// int Book::turn_page(int num_pages)
+// int Book::TurnPage(int num_pages)
 // {
 //     set_bookmark(bookmark_ + num_pages);
 //     return bookmark_;
 // }
 
-void Book::print_details(ostream& stream) const
+void Book::PrintDetails(ostream& stream) const
 {
     stream << "Title: " << title_ << endl;
     stream << "Author: " << author_ << endl;

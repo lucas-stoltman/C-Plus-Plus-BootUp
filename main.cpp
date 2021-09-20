@@ -48,8 +48,7 @@ int main() {
     book2 = book1;
     book2.set_author("Jimmy Jazz");
     
-    book1.print_details(cout);
-    book2.print_details(cout);
-    
+    book1.PrintDetails(cout);
+
     return 0;
 }

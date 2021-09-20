@@ -20,8 +20,8 @@ class Book
             bool set_bookmark(int bookmark);
 
             // actions
-            int turn_page(int num_pages);
-            void print_details(ostream& stream) const; // just a fancy getter, hence const
+            int TurnPage(int num_pages);
+            void PrintDetails(ostream& stream) const; // just a fancy getter, hence const
 
             // constructors
             Book();
