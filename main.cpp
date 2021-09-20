@@ -41,7 +41,7 @@ int main() {
 
     Book book1, book2, book3;
 
-    cout << "Greetinge, welcome to the library of congress." << endl;
+    cout << "Greetings, welcome to the library of congress." << endl;
 
     book1.set_title("Dune");
     book1.set_author("Herbert");
