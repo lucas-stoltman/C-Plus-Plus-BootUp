@@ -6,6 +6,11 @@ using namespace std;
 class Book 
     {
         public:
+            // constructors
+            Book();
+            Book(string title, string author);
+            Book(string title, string author, int length, int bookmark);
+
             // getters
             // getters never change the data, therefor, they should always be const
             string title() const;
@@ -20,13 +25,9 @@ class Book
             bool set_bookmark(int bookmark);
 
             // actions
+            int TurnPage();
             int TurnPage(int num_pages);
             void PrintDetails(ostream& stream) const; // just a fancy getter, hence const
-
-            // constructors
-            Book();
-            Book(string title, string author);
-            Book(string title, string author, int length, int bookmark);
 
         private:
             // private variables encapsulated from the user 

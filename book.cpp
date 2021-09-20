@@ -3,7 +3,35 @@
 #include <iostream>
 using namespace std;
 
-// GETTERS
+// constructors
+// super basic constructor
+Book::Book()
+{
+    title_ = "";
+    author_ = "";
+    length_ = 0;
+    bookmark_ = 1;
+}
+
+// intermediate constructor
+Book::Book(string title, string author)
+{
+    title_ = title;
+    author_ = author;
+    length_ = 0;
+    bookmark_ = 1;
+}
+
+// complete constructor
+Book::Book(string title, string author, int length, int bookmark)
+{
+    title_ = title;
+    author_ = author;
+    length_ = length;
+    bookmark_ = bookmark;
+}
+
+// getters
 // getters never change the data, therefor, they should always be const
 string Book::title() const
 {
@@ -25,7 +53,7 @@ int Book::bookmark() const
     return bookmark_;
 }
 
-// SETTERS
+// setters
 bool Book::set_title(string title)
 {
     title_ = title;
@@ -64,34 +92,12 @@ bool Book::set_bookmark(int bookmark)
     }
 }
 
-// CONSTRUCTORS
-// super basic constructor
-Book::Book()
+// actions
+int Book::TurnPage()
 {
-    title_ = "";
-    author_ = "";
-    length_ = 0;
-    bookmark_ = 1;
+    set_bookmark(bookmark_ + 1);
+    return bookmark_;
 }
-
-// intermediate constructor
-Book::Book(string title, string author)
-{
-    title_ = title;
-    author_ = author;
-    length_ = 0;
-    bookmark_ = 1;
-}
-
-// complete constructor
-Book::Book(string title, string author, int length, int bookmark)
-{
-    title_ = title;
-    author_ = author;
-    length_ = length;
-    bookmark_ = bookmark;
-}
-
 
 int Book::TurnPage(int num_pages)
 {

@@ -39,14 +39,16 @@ using namespace std;
 
 int main() {
 
-    Book book2, book3;
-
     cout << "Greetings, welcome to the library of congress." << endl;
 
-    Book book1("Dune", "Herbert", 451, 1);
-    book1.TurnPage(1);
+    Book 
+    book1("Dune", "Herbert", 451, 1), 
+    book2("The Alchemist", "Paulo Coelho", 197, 1), 
+    book3("Meditations", "Marcus Aurelius", 416, 1);
     
     book1.PrintDetails(cout);
+    book2.PrintDetails(cout);
+    book3.PrintDetails(cout);
 
     return 0;
 }
