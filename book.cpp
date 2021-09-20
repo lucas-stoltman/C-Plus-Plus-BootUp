@@ -1,7 +1,10 @@
 // Classes and methods actually implemented here
 #include "book.h"
+#include <iostream>
+using namespace std;
 
 // GETTERS
+// getters never change the data, therefor, they should always be const
 string Book::title() const
 {
     return title_;
@@ -96,11 +99,10 @@ Book::Book(string title, string author, int length, int bookmark)
 //     return bookmark_;
 // }
 
-// void Book::print_details(ostream& stream) const
-// {
-//     stream << "Title: " << title_ << endl;
-//     stream << "Author: " << author_ << endl;
-//     stream << "Length: " << length_ << endl;
-//     stream << "Current Location: " << bookmark_ << endl << endl;
-
-// }
+void Book::print_details(ostream& stream) const
+{
+    stream << "Title: " << title_ << endl;
+    stream << "Author: " << author_ << endl;
+    stream << "Length: " << length_ << endl;
+    stream << "Current Location: " << bookmark_ << endl << endl;
+}

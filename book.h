@@ -7,6 +7,7 @@ class Book
     {
         public:
             // getters
+            // getters never change the data, therefor, they should always be const
             string title() const;
             string author() const;
             int length() const;
@@ -18,8 +19,9 @@ class Book
             bool set_length(int length);
             bool set_bookmark(int bookmark);
 
+            // actions
             int turn_page(int num_pages);
-            void print_details(ostream& stream) const;
+            void print_details(ostream& stream) const; // just a fancy getter, hence const
 
             // constructors
             Book();

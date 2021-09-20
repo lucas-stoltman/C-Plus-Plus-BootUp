@@ -39,21 +39,17 @@ using namespace std;
 
 int main() {
 
-    Book book1, book2, book3;
+    Book book2, book3;
 
     cout << "Greetings, welcome to the library of congress." << endl;
 
-    book1.set_title("Dune");
-    book1.set_author("Herbert");
-    book1.set_length(451);
-    book1.set_bookmark(1);
+    Book book1("Dune", "Herbert", 451, 1);
 
     book2 = book1;
     book2.set_author("Jimmy Jazz");
-
-    cout << "test" << endl;
     
-    // book1.print_details(cout)
-    // book2.print_details(cout)
+    book1.print_details(cout);
+    book2.print_details(cout);
+    
     return 0;
 }
