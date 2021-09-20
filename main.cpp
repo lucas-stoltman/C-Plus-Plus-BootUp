@@ -1,4 +1,29 @@
 // Created by Lucas Stoltman 2021
+#include <iostream>
+
+#include "book.h"
+#include "bookshelf.h"
+
+using namespace std;
+
+int main()
+{
+
+    cout << "--------------------------------------------------------" << endl;
+    cout << "Greetings, welcome to the library of congress." << endl
+         << endl;
+
+    Book
+        book1("Dune", "Herbert", 451, 1),
+        book2("The Alchemist", "Paulo Coelho", 197, 1),
+        book3("Meditations", "Marcus Aurelius", 416, 1);
+
+    book1.PrintDetails(cout);
+    book2.PrintDetails(cout);
+    book3.PrintDetails(cout);
+
+    return 0;
+}
 
 /*
 
@@ -31,24 +56,3 @@ int main() {
     cout << "that is " << (365*age) << " days." << endl;
 }
 */
-
-#include <iostream>
-#include "book.h"
-#include "bookshelf.h"
-using namespace std;
-
-int main() {
-
-    cout << "Greetings, welcome to the library of congress." << endl;
-
-    Book 
-    book1("Dune", "Herbert", 451, 1), 
-    book2("The Alchemist", "Paulo Coelho", 197, 1), 
-    book3("Meditations", "Marcus Aurelius", 416, 1);
-    
-    book1.PrintDetails(cout);
-    book2.PrintDetails(cout);
-    book3.PrintDetails(cout);
-
-    return 0;
-}

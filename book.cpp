@@ -1,6 +1,8 @@
 // Classes and methods actually implemented here
-#include "book.h"
 #include <iostream>
+
+#include "book.h"
+
 using namespace std;
 
 // constructors
@@ -73,7 +75,7 @@ bool Book::set_length(int length)
         length_ = length;
         return true;
     }
-    else 
+    else
     {
         return false;
     }
@@ -81,14 +83,14 @@ bool Book::set_length(int length)
 
 bool Book::set_bookmark(int bookmark)
 {
-    if ((bookmark < 0 ) || (bookmark > length_))
+    if ((bookmark < 0) || (bookmark > length_))
     {
         return false;
     }
-    else 
+    else
     {
-    bookmark_ = bookmark;
-    return true;
+        bookmark_ = bookmark;
+        return true;
     }
 }
 
@@ -105,10 +107,11 @@ int Book::TurnPage(int num_pages)
     return bookmark_;
 }
 
-void Book::PrintDetails(ostream& stream) const
+void Book::PrintDetails(ostream &stream) const
 {
     stream << "Title: " << title_ << endl;
     stream << "Author: " << author_ << endl;
     stream << "Length: " << length_ << endl;
-    stream << "Current Location: " << bookmark_ << endl << endl;
+    stream << "Current Location: " << bookmark_ << endl
+           << endl;
 }
